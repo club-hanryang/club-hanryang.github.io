@@ -1,0 +1,21 @@
+css/style.css
+  s_d4c12f093ace19::t_f9f68df1065223 163-170
+index.html
+  s_d4c12f093ace19::t_7d22ef7be42862 93,95,101-102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "b4b29b2b4b1bfa475310a0954e3b82b669ad5cfe",
+  "prompts": {},
+  "sessions": {
+    "s_d4c12f093ace19": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "354023cc-337a-42ba-9106-159617da4a74",
+        "model": "claude-opus-5"
+      },
+      "human_author": "AppleMint98 <applemint9821@gmail.com>"
+    }
+  }
+}
