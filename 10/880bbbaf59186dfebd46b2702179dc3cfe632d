@@ -1,0 +1,44 @@
+css/style.css
+  s_04030fc15dea29::t_36e82a18954c60 20-23,28-29,53-63,94,128,130,150,217,230-233,244,270,291
+  s_04030fc15dea29::t_c2b38c0f576632 12
+privacy.html
+  s_04030fc15dea29::t_aced0f4098a15f 12
+  s_04030fc15dea29::t_dd8b9dcc82ca4d 13
+  s_04030fc15dea29::t_c2b38c0f576632 123
+clubs/attendance/index.html
+  s_04030fc15dea29::t_aced0f4098a15f 18
+  s_04030fc15dea29::t_c2b38c0f576632 125,135
+  s_04030fc15dea29::t_dd8b9dcc82ca4d 19,81,86,91
+clubs/diet/index.html
+  s_04030fc15dea29::t_aced0f4098a15f 18
+  s_04030fc15dea29::t_dd8b9dcc82ca4d 19,41,44,60,62,65,67,70,72
+  s_04030fc15dea29::t_c2b38c0f576632 93,103
+index.html
+  s_04030fc15dea29::t_dd8b9dcc82ca4d 19,35,88,90,105,107,113,115
+  s_04030fc15dea29::t_c2b38c0f576632 36,59,79,104,153,186
+  s_04030fc15dea29::t_aced0f4098a15f 18
+clubs/morning/index.html
+  s_04030fc15dea29::t_dd8b9dcc82ca4d 19,41,44,60,62,65,67,70,72
+  s_04030fc15dea29::t_c2b38c0f576632 93,103
+  s_04030fc15dea29::t_aced0f4098a15f 18
+clubs/workout/index.html
+  s_04030fc15dea29::t_dd8b9dcc82ca4d 19,60,65,70
+  s_04030fc15dea29::t_aced0f4098a15f 18
+  s_04030fc15dea29::t_c2b38c0f576632 32,38,56,103
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "10880bbbaf59186dfebd46b2702179dc3cfe632d",
+  "prompts": {},
+  "sessions": {
+    "s_04030fc15dea29": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c0f7f06-b703-4429-a4a2-36fc3c725b53",
+        "model": "claude-opus-5"
+      },
+      "human_author": "AppleMint98 <applemint9821@gmail.com>"
+    }
+  }
+}
