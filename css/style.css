@@ -168,6 +168,17 @@ h1.hero-title {
   box-shadow: 0 14px 40px rgba(0, 0, 0, .45);
 }
 
+/* 소개페이지의 큰 대표 사진과, 그 아래 나란한 세 장 */
+.shot-lead {
+  display: block; width: 100%; max-width: 580px; margin: 0 auto 44px;
+  border-radius: 18px; box-shadow: 0 14px 40px rgba(0, 0, 0, .45);
+}
+.shot-trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.shot-trio figure { margin: 0; }
+.shot-trio .shot-img { max-width: none; }
+.shot-trio figcaption { margin-top: 14px; font-size: 15px; font-weight: 800; }
+.shot-trio figcaption span { display: block; margin-top: 4px; font-size: 13px; font-weight: 400; color: var(--mute); }
+
 .heat-box { background: var(--panel); border: 1px solid var(--panel-line); padding: 22px; }
 .heat-label { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .1em; color: var(--faint); margin-bottom: 16px; }
 .heat-month { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
@@ -363,6 +374,7 @@ h1.hero-title {
   .qr-panel { display: none; }
 
   .shots { gap: 14px; }
+  .shot-trio { grid-template-columns: 1fr; gap: 30px; }
   .shot .cap { font-size: 14px; }
   .how { grid-template-columns: 1fr; gap: 12px; }
   .how-card { padding: 24px; }
