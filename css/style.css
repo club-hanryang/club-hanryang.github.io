@@ -120,6 +120,7 @@ h1.hero-title {
   padding: 30px; display: flex; flex-direction: column; justify-content: space-between;
 }
 .hero-cell img { width: 132px; height: 132px; align-self: center; }
+.hero-cell .cell-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .hero-cell .num { font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: .1em; }
 .hero-cell .name { font-family: var(--display); font-size: 40px; }
 
@@ -151,6 +152,16 @@ h1.hero-title {
 .feature-copy p { font-size: 18px; line-height: 1.72; margin: 0; max-width: 22em; }
 .feature-art { flex: 1 1 auto; padding: 76px var(--gutter); display: flex; align-items: center; justify-content: center; gap: 24px; }
 .arrow { flex: 0 0 auto; }
+
+/* 아직 다듬는 중인 클럽에 붙이는 표시. 색면 위에 조용히 얹히도록,
+ * 배경은 바탕색을 누르거나 띄우는 정도로만 써요. */
+.badge {
+  display: inline-flex; align-items: center; flex: 0 0 auto;
+  padding: 5px 10px; vertical-align: middle;
+  font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .14em;
+}
+.on-light .badge { background: rgba(0,0,0,.16); color: rgba(0,0,0,.72); }
+.on-dark .badge { background: rgba(255,255,255,.2); color: rgba(255,255,255,.88); }
 
 .chip {
   display: inline-flex; align-items: center; gap: 10px;
@@ -267,6 +278,7 @@ h1.hero-title {
 .detail-hero { display: flex; align-items: stretch; }
 .detail-copy { flex: 1 1 auto; padding: 76px var(--gutter) 72px; display: flex; flex-direction: column; justify-content: center; }
 .detail-copy img.icon { width: 108px; height: 108px; margin-bottom: 32px; }
+.detail-copy .badge { align-self: flex-start; margin-bottom: 16px; }
 .detail-copy h1 { font-family: var(--display); font-size: clamp(52px, 6.6vw, 88px); line-height: 1.16; margin-bottom: 26px; }
 .detail-copy p { font-size: 21px; line-height: 1.6; margin: 0 0 40px; max-width: 20em; }
 .detail-hint { font-size: 15px; }
@@ -325,6 +337,8 @@ h1.hero-title {
   background: var(--panel); border: 1px dashed #3A3A3A;
   padding: 22px 24px; font-size: 15px; line-height: 1.75; color: var(--dim);
 }
+/* 색면 위에 얹을 때. 어두운 패널 배경 그대로면 구멍처럼 보여요. */
+.notice.on-color { background: rgba(0,0,0,.14); border-color: rgba(0,0,0,.3); color: rgba(0,0,0,.82); }
 
 /* ── 반응형 ──────────────────────────────────────────── */
 @media (max-width: 1100px) {
