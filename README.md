@@ -1,6 +1,6 @@
 # club-hanryang.github.io
 
-한량들의 클럽 소개 사이트예요. <https://club-hanryang.github.io/>
+한량 클럽 소개 사이트예요. <https://club-hanryang.github.io/>
 
 빌드 과정이 없어요. HTML을 고쳐서 커밋하면 그대로 배포돼요.
 
