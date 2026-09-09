@@ -1,0 +1,31 @@
+README.md
+  s_d4c12f093ace19::t_deef56fec137be 3
+clubs/attendance/index.html
+  s_d4c12f093ace19::t_649bb603b92541 6,10,26,162,166
+clubs/diet/index.html
+  s_d4c12f093ace19::t_5b38f853ecc7da 6,10,26,151,155
+clubs/morning/index.html
+  s_d4c12f093ace19::t_ef899c8d2ff089 6,10,26,151,155
+clubs/workout/index.html
+  s_d4c12f093ace19::t_3cf4db7736ada6 6,10,26,151,155
+index.html
+  s_d4c12f093ace19::t_c714f3dac42bda 6,10,24,150,239
+privacy.html
+  s_d4c12f093ace19::t_d889eba0a1c6a6 6-7,43,51,127,131
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "a94b32979e0f12e7d9c58371b1c3e03e56f6b715",
+  "prompts": {},
+  "sessions": {
+    "s_d4c12f093ace19": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "354023cc-337a-42ba-9106-159617da4a74",
+        "model": "claude-opus-5"
+      },
+      "human_author": "AppleMint98 <applemint9821@gmail.com>"
+    }
+  }
+}
