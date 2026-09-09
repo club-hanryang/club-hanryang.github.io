@@ -9,7 +9,7 @@
   --morning: #FA5D38;
   --attendance: #2471F7;
   --diet: #12A292;
-  --workout: #068A4A;
+  --workout: #02A252;
 
   --bg: #121212;
   --panel: #1A1A1A;
@@ -17,16 +17,16 @@
   --panel-line: #2E2E2E;
 
   --ink: #FFFFFF;
-  --dim: #ADADAD;
-  --mute: #8A8A8A;
-  --faint: #6A6A6A;
-  --ghost: #5A5A5A;
+  --dim: #C7C7C7;
+  --mute: #A2A2A2;
+  --faint: #8A8A8A;
+  --ghost: #757575;
 
   --pending: #FF8A00;
 
   --gutter: 56px;
-  --display: 'Black Han Sans', 'Gothic A1', 'Apple SD Gothic Neo', sans-serif;
-  --body: 'Gothic A1', 'Apple SD Gothic Neo', system-ui, sans-serif;
+  --display: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+  --body: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
   --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
@@ -50,7 +50,17 @@ img { display: block; max-width: 100%; }
 h1, h2, h3 { margin: 0; }
 
 .mono { font-family: var(--mono); }
-.display { font-family: var(--display); font-weight: 400; }
+.display { font-family: var(--display); font-weight: 800; }
+
+/* 제목은 본문과 같은 가족을 쓰고 굵기로만 구분해요. 전용 제목 서체를 쓸 때는
+ * 굵기가 하나뿐이라 400으로 뒀는데, 이제는 여기서 한 번에 정해요. */
+.brand span,
+h1.hero-title, .hero-cell .name, .step h3, .feature-copy h2,
+.clubs-head h2, .club-row .name, .about-side h2,
+.detail-copy h1, .section h2, .how-card h3 {
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
 
 /* ── 상단 바 ─────────────────────────────────────────── */
 .nav {
@@ -81,7 +91,7 @@ h1, h2, h3 { margin: 0; }
 }
 h1.hero-title {
   font-family: var(--display); font-size: clamp(52px, 7.4vw, 106px);
-  line-height: 1.0; letter-spacing: -0.02em; margin-bottom: 36px;
+  line-height: 1.16; margin-bottom: 36px;
 }
 .lede { font-size: 19px; line-height: 1.65; color: var(--dim); margin: 0 0 44px; max-width: 23em; }
 
@@ -115,9 +125,9 @@ h1.hero-title {
 
 /* 색면 위 글자. 밝은 면은 검정, 어두운 면은 흰색이 읽혀요. */
 .on-light { color: #121212; }
-.on-light .num { color: rgba(0,0,0,.45); }
+.on-light .num { color: rgba(0,0,0,.58); }
 .on-dark { color: #FFFFFF; }
-.on-dark .num { color: rgba(255,255,255,.55); }
+.on-dark .num { color: rgba(255,255,255,.68); }
 
 /* ── 공통 구조 3단 ───────────────────────────────────── */
 .steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -137,7 +147,7 @@ h1.hero-title {
   display: flex; flex-direction: column; justify-content: center;
 }
 .feature-copy .label { font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: .16em; margin-bottom: 26px; }
-.feature-copy h2 { font-family: var(--display); font-size: clamp(38px, 4.6vw, 64px); line-height: 1.08; margin-bottom: 26px; }
+.feature-copy h2 { font-family: var(--display); font-size: clamp(38px, 4.6vw, 64px); line-height: 1.22; margin-bottom: 26px; }
 .feature-copy p { font-size: 18px; line-height: 1.72; margin: 0; max-width: 22em; }
 .feature-art { flex: 1 1 auto; padding: 76px var(--gutter); display: flex; align-items: center; justify-content: center; gap: 24px; }
 .arrow { flex: 0 0 auto; }
@@ -204,7 +214,7 @@ h1.hero-title {
 
 /* ── 클럽 띠 ─────────────────────────────────────────── */
 .clubs-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; padding: 80px var(--gutter) 44px; }
-.clubs-head h2 { font-family: var(--display); font-size: clamp(38px, 4.4vw, 60px); line-height: 1.06; }
+.clubs-head h2 { font-family: var(--display); font-size: clamp(38px, 4.4vw, 60px); line-height: 1.2; }
 .clubs-head p { font-size: 17px; color: var(--dim); margin: 0 0 8px; text-align: right; }
 
 .club-row {
@@ -217,10 +227,10 @@ h1.hero-title {
 .club-row .name { font-family: var(--display); font-size: 38px; flex: 0 0 200px; }
 .club-row .desc { font-size: 17px; line-height: 1.6; flex: 1 1 auto; }
 .club-row .go { display: flex; align-items: center; gap: 9px; font-size: 16px; font-weight: 900; flex: 0 0 auto; }
-.club-row.on-light .num { color: rgba(0,0,0,.4); }
-.club-row.on-light .desc { color: rgba(0,0,0,.72); }
-.club-row.on-dark .num { color: rgba(255,255,255,.5); }
-.club-row.on-dark .desc { color: rgba(255,255,255,.84); }
+.club-row.on-light .num { color: rgba(0,0,0,.55); }
+.club-row.on-light .desc { color: rgba(0,0,0,.8); }
+.club-row.on-dark .num { color: rgba(255,255,255,.66); }
+.club-row.on-dark .desc { color: rgba(255,255,255,.9); }
 .club-row.soon {
   background: var(--panel); color: var(--faint);
   border-top: 1px dashed #3A3A3A; border-bottom: 1px dashed #3A3A3A;
@@ -231,7 +241,7 @@ h1.hero-title {
 /* ── 회사 소개 ───────────────────────────────────────── */
 .about { display: flex; gap: 80px; padding: 100px var(--gutter); }
 .about-side { flex: 0 0 460px; }
-.about-side h2 { font-family: var(--display); font-size: clamp(38px, 4.2vw, 58px); line-height: 1.08; margin-bottom: 26px; }
+.about-side h2 { font-family: var(--display); font-size: clamp(38px, 4.2vw, 58px); line-height: 1.22; margin-bottom: 26px; }
 .about-side img { width: 132px; height: 132px; }
 .about-body { flex: 1 1 auto; max-width: 700px; }
 .about-body p.big { font-size: 21px; line-height: 1.75; margin: 0 0 22px; color: #E4E4E4; }
@@ -257,7 +267,7 @@ h1.hero-title {
 .detail-hero { display: flex; align-items: stretch; }
 .detail-copy { flex: 1 1 auto; padding: 76px var(--gutter) 72px; display: flex; flex-direction: column; justify-content: center; }
 .detail-copy img.icon { width: 108px; height: 108px; margin-bottom: 32px; }
-.detail-copy h1 { font-family: var(--display); font-size: clamp(52px, 6.6vw, 88px); line-height: 1.0; margin-bottom: 26px; }
+.detail-copy h1 { font-family: var(--display); font-size: clamp(52px, 6.6vw, 88px); line-height: 1.16; margin-bottom: 26px; }
 .detail-copy p { font-size: 21px; line-height: 1.6; margin: 0 0 40px; max-width: 20em; }
 .detail-hint { font-size: 15px; }
 
@@ -278,7 +288,7 @@ h1.hero-title {
 .qr-panel p { font-size: 14px; line-height: 1.6; color: var(--mute); margin: 0; }
 
 .section { padding: 88px var(--gutter); }
-.section h2 { font-family: var(--display); font-size: clamp(32px, 3.6vw, 44px); line-height: 1.08; }
+.section h2 { font-family: var(--display); font-size: clamp(32px, 3.6vw, 44px); line-height: 1.2; }
 .section > p.intro { font-size: 18px; line-height: 1.7; color: var(--dim); margin: 16px 0 44px; max-width: 34em; }
 
 .shots { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
